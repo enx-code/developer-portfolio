@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+.portfolio {
+  background-color: rgb(255, 221, 227);
+  padding: 20px;
+  border-top: solid 5px black;
+  border-bottom: solid 5px black;
+}
+
+.project {
+  border: solid 5px rgb(179, 3, 120);
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+  display: grid;
+  grid-template-row: 30px 1fr 30px 20px;
+  grid-gap: 10px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  padding: 0 50px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.project .read-more {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+}
+.project .project-title {
+  font-size: 1.5rem;
+  display: grid;
+  align-content: center;
+}
+.project .github-repo {
+  color: var(--primary-color);
+  display: grid;
+  place-items: center;
+}
+html {
+  --primary-color: rgb(179, 3, 120);
+  --top-color: rgb(82, 200, 226);
+  scroll-behavior: smooth;
+}
+.top-bar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 0 20px;
+  background-color: var(--top-color);
+  padding: 5px 20px;
+  border-top: solid 5px black;
+}
+.top-bar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 20px;
+}
+.top-bar li {
+  display: inline;
+}
+.top-bar nav {
+  display: grid;
+  align-content: center;
+  justify-content: right;
+}
+.top-bar a {
+  text-decoration: none;
+  background-color: #ffffffee;
+  padding: 3px 7px;
+  border-radius: 3px;
+  color: rgb(82, 200, 226);
+  font-size: 0.9rem;
+}
+.main-title {
+  margin-top: 5px;
+  color: #ffffffee;
+}
+.sub-top {
+  background-color: var(--top-color);
+  border-bottom: solid 5px black;
+  height: 500px;
+  display: grid;
+  place-items: center;
+}
+.sub-top h1 {
+  font-size: 50px;
+  color: #ffffffee;
+  display: grid;
+  place-content: center;
+  padding-top: 150px;
+}
+.sub-top p {
+  color: #ffffffee;
+
+  padding-bottom: 150px;
+}
+.sub-top p span {
+  color: black;
+}
+.sub-top p em {
+  text-decoration: black underline;
+}
+.footer p {
+  background-color: #333333;
+  color: #ffffffee;
+  padding: 10px 0 5px 10px;
+}
+.box p,
+.second-row {
+  margin: 20px;
+}
+.first,
+.second {
+  display: inline;
+  background-color: red;
+}
